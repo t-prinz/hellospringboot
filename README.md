@@ -43,6 +43,6 @@ Select Spring Web (the one with the embedded Tomcat server)
 
 # To run this in a container letting OpenShift S2I perform the build
 
-    oc new-app --name=howdy java:openjdk-17-ubi8~https://github.com/t-prinz/hello-spring-boot.git
-    oc expose svc/howdy
+    oc new-app --name=hellospringboot java:openjdk-17-ubi8~https://github.com/t-prinz/hellospringboot.git
+    oc expose svc/hellospringboot
 
