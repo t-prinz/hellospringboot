@@ -10,7 +10,11 @@ public class HelloController {
 
         @GetMapping("/")
         public String index() {
-                System.out.println("Queried the REST endpoing");
+                System.out.println("Queried the REST endpoint");
+
+                String mysql_user = System.getenv("MYSQL_USER");
+                System.out.println("MYSQL_USER : " + mysql_user);
+
                 return "Greetings from Spring Boot!";
         }
 
